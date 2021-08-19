@@ -1,0 +1,4 @@
+<h2>route1 works!</h2>
+<ul class="items">
+    <li *ngFor="let item of items" (click)="onClickHandler(item)" [class.simple]="onSelect(item)"><h2>{{item.id}}: {{item.name}}</h2></li>
+</ul>
